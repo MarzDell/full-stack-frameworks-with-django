@@ -1,0 +1,8 @@
+*.sqlite3
+*.pyc
+.~c9
+__pycache__/
+db.json
+env.py
+node_modules
+/env/*
