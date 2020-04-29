@@ -1,0 +1,86 @@
+{% load staticfiles %}
+
+{% load bootstrap_tags %}
+
+<html>
+
+<head>
+    <title>{% block page_title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    {% block head_js %}
+    {% endblock %}
+
+</head>
+
+<!-- Navigation -->
+
+<body>
+    <nav class="navbar navbar-masthead navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class='navbar-brand' href='{% url "home" %}'><span class='glyphicon glyphicon-home' aria-hidden='true'></span>Antiques shop</a>
+        </div>
+        <div id='navbar' class='navbar-collapse collapse'>
+            <ul class='nav navbar-nav navbar-center'>
+                <form action='{% url "home" %}' id='search' method='GET'
+                    <input type='text' class='search-btn' name='q' palceholder='Search Antiques'>
+                    <button type='search' class='search-btn'>Search</button>
+                </form>
+                 <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'home' %}"></a></li>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'home' %}"></a></li>
+                {%  else %}
+                <li><a href="{% url 'home' %}"></a></li>
+                <li><a href="{% url 'home' %}"></a></li>
+                {% endif %}
+                <li><a href="{% url 'home' %}"></a></li>
+                <li>
+                    <a href="{% url 'home' %}">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Cart
+                        {% if product_count > 0 %}
+                        <label class="badge badge-warning">{{ product_count }}</label>
+                        {% endif %}
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- End user message alerts -->
+
+    {% if messages %}
+    <div class="alert alert-success">
+        <div class="messages">
+            {% for message in messages %}
+            {{ message }}
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    <div class="container">
+        <div class="display text-center">
+        </div>
+        {% block content %} {% endblock %}
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container text-center">
+            <p></p>
+        </div>
+    </footer>
+</body>
