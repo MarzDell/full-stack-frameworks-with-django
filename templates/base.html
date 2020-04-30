@@ -42,12 +42,11 @@
                  <li><a href="{% url 'home' %}">Home</a></li>
                 <li><a href="{% url 'products' %}">Our Antiques</a></li>
                 {% if user.is_authenticated %}
-                <li><a href="{% url 'home' %}"></a></li>
+                <li><a href="{% url 'logout' %}">Log Out</a></li>
                 {%  else %}
-                <li><a href="{% url 'home' %}"></a></li>
-                <li><a href="{% url 'home' %}"></a></li>
+                <li><a href="{% url 'registration' %}">Register</a></li>
+                <li><a href="{% url 'login' %}"></a>Log In</li>
                 {% endif %}
-                <li><a href="{% url 'home' %}"></a></li>
                 <li>
                     <a href="{% url 'home' %}">
                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Cart
