@@ -18,6 +18,7 @@ from django.urls import path, include
 from home import urls as urls_home
 from products.views import all_products
 from search import urls as urls_search
+from contact import urls as urls_contact
 
 
 
@@ -26,4 +27,5 @@ urlpatterns = [
     path(r'', include(urls_home)),
     path(r'products/', all_products, name='products'),
     path(r'search/', include(urls_search)),
+    path(r'contact/', include(urls_contact)),
 ]

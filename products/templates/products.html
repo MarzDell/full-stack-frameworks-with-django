@@ -8,7 +8,7 @@
 
 <h2 class='page-title'>Our Antiques</h2><br>
 <p class='product-info'>If you would like to some more information or advice on any of our antiques please click
-    <a href='{% url "home" %}'>here</a> to send us your query.</p><br><br>
+    <a href='{% url "contact" %}'>here</a> to send us your query.</p><br><br>
 
         <h2 class='header-info'>Our Products</h2>
 
@@ -22,7 +22,7 @@
                 <p class="product-description">{{ product.description }}</p>
                 <p>{{ product.price }}</p>
 
-                <form method="post" action="{% url '' product.id %}">
+                <form method="post" action="{% url 'home' product.id %}">
                     {% csrf_token %}
                     <div class="input-group">
                         <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
