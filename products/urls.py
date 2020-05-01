@@ -1,7 +1,7 @@
-from django.conf.urls import url, include
-from .views import all_products
+from django.urls import path, include
+from .views import products
 
 
 urlpatterns = [
-    url(r'^$', all_products, name='products')
+    path(r'', products, name='products')
 ]

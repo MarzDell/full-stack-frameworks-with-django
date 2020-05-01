@@ -1,7 +1,7 @@
-from django.conf.urls import url, include
+from django.urls import path, include
 from .views import search_products
 
 
 urlpatterns = [
-    url(r'^$', search_products, name='search')
+    path(r'', search_products, name='search')
 ]

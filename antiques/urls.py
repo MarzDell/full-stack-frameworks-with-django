@@ -18,17 +18,20 @@ from django.urls import path, include
 from home import urls as urls_home
 from accounts import urls as urls_accounts
 from products import urls as urls_products
-from products.views import all_products
 from search import urls as urls_search
 from contact import urls as urls_contact
+from django.views import static
+from .settings import MEDIA_ROOT
+from django.conf import settings
+
 
 
 urlpatterns = [
     path(r'admin/', admin.site.urls),
-    path(r'', include(urls_home)),
-    path(r'products/', all_products, name='products'),
-    path(r'accounts/', include(urls_accounts)),
-    path(r'products/', include(urls_products)),
-    path(r'search/', include(urls_search)),
-    path(r'contact/', include(urls_contact)),
+    path(r'', include('home.urls')),
+    path(r'products/', include('products.urls')),
+    path(r'accounts/', include('accounts.urls')),
+    path(r'search/', include('search.urls')),
+    path(r'contact/', include('contact.urls')),
+    path(r'media/(?P<path>.*)', static.serve, {'document_root': MEDIA_ROOT}),
 ]
