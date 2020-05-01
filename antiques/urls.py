@@ -18,6 +18,7 @@ from django.urls import path, include
 from home import urls as urls_home
 from accounts import urls as urls_accounts
 from products import urls as urls_products
+from cart import urls as urls_cart
 from search import urls as urls_search
 from contact import urls as urls_contact
 from django.views import static
@@ -25,13 +26,13 @@ from .settings import MEDIA_ROOT
 from django.conf import settings
 
 
-
 urlpatterns = [
     path(r'admin/', admin.site.urls),
     path(r'', include('home.urls')),
     path(r'products/', include('products.urls')),
+    path(r'cart/', include('cart.urls')),
     path(r'accounts/', include('accounts.urls')),
     path(r'search/', include('search.urls')),
     path(r'contact/', include('contact.urls')),
-    path(r'media/(?P<path>.*)', static.serve, {'document_root': MEDIA_ROOT}),
+    path(r'media/(<path>.*)', static.serve, {'document_root': MEDIA_ROOT}),
 ]

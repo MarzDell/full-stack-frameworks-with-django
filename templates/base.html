@@ -47,7 +47,7 @@
                 <li><a href="{% url 'login' %}"></a>Log In</li>
                 {% endif %}
                 <li>
-                    <a href="{% url 'home' %}">
+                    <a href="{% url 'view_cart' %}">
                         <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Cart
                         {% if product_count > 0 %}
                         <label class="badge badge-warning">{{ product_count }}</label>
