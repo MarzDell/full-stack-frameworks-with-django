@@ -27,7 +27,7 @@ SECRET_KEY = '_%#$&^#*#j@_n)c&4c636y6at96*h@_60vgy2hboa+6aen(q5r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [os.environ.get("C9_HOSTNAME"), '127.0.0.1:8000']
 
 
 # Application definition
@@ -71,6 +71,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
                 'cart.contexts.cart_contents',
             ],
         },
