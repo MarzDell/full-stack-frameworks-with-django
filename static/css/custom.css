@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair Display:100,200,300,400,500,600,700');
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 20px;
+    padding-top: 100px;
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+.page-title {
+    margin-top: 60px;
+    font-size: 40px;
+    color: black;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 500;
+}
+
+.navbar-default .navbar-brand, a#product-link {
+    font-size: 20px;
+    color: black;
+}
+
+.navbar-default .navbar-nav>li>a, a {
+    font-size: 16px;
+    color: black;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+.navbar-default .navbar-nav>li>a:hover, a:hover,.navbar-default .navbar-brand:hover, a#product-link:hover{
+    color: #DAA520;
+    text-decoration: none;
+    background: none;
+}
+
+.navbar {
+    border-bottom: none;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+.email {
+    margin-top: 100px;
+}
+
+.col-xs-4 {
+    text-align: left;
+    width: 100%;
+}
+
+/*Navigation bar*/
+
+.navbar-collapse, .navbar-header {
+    background-color: #f8fcff;
+}
+
+.navbar-nav>li>a {
+    font-size: 16px;
+}
+
+.navbar-default .navbar-toggle {
+    background-color: #f8fcff;
+    border-color: #f8fcff;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+/* Search area */
+
+#search {
+    width: 100%;
+    border-radius: 5px;
+    display: contents;
+}
+
+form#search {
+    text-align: -webkit-center;
+}
+
+.search-btn {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    font-size: 14px;
+    border: 1px solid gray;
+    margin-top: 15px;
+}
+
+.reset-btn {
+    margin-top: 35px;
+    border-radius: 5px;
+    margin-left: 20px;
+    background-color: whitesmoke;
+    font-size: 18px;
+}
+
+input#id_email {
+    width: 100%;
+    border-radius: 5px;
+}
+
+button, input.search-btn {
+    color: black;
+}
+
+button.search-btn {
+    background-color: darksalmon;
+    font-size: 16px;
+}
+
+
+button:hover {
+    color: gray;
+    background-color: blanchedalmond;
+    
+}
+
+/** Form control**/
+
+form {
+    width: 50%;
+    text-align: center;
+    margin: 50px;
+}
+
+.quantity-input {
+    width: auto;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.btn-warning, .btn-danger, .btn-success {
+    border-radius: 5px!important;
+}
+
+
+/***Product image***/
+
+.product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+/** Product Description**/
+
+caption p {
+    word-wrap: break-word;
+}
+
+.row-row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.product-description {
+    min-height: 40px;
+}
+
+/**Custome Bootstrap**/
+
+.panel-body {
+    padding: 0;
+}
+
+.glyphicon {
+    font-size: 13px;
+}
+
+.navbar-default .badge {
+    background-color: #DAA520;
+    color: black;
+}
+
+/*** Footer***/
+
+footer {
+    background-color: #f8fcff;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 30px;
+    padding-top: 25px;
+    width: 100%;
+}
+
+.col-sm-4 {
+    text-align: center;
+}
+
+.fa {
+    font-size: 30px;
+    color: black;
+}
+
+.col-sm-4 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 300;
+}
+
+li {
+    display: inline-block;
+}
+
+.fa:hover {
+    color: #DAA520;
+}
+
+h6.general {
+    color: black;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}

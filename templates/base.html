@@ -8,11 +8,8 @@
     <title>{% block page_title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static 'font-awesome/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 
     {% block head_js %}
     {% endblock %}
@@ -30,15 +27,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class='navbar-brand' href='{% url "home" %}'><span class='glyphicon glyphicon-home' aria-hidden='true'></span>Antiques shop</a>
+            <a class='navbar-brand' href='{% url "home" %}'>Antiques shop</a>
         </div>
         <div id='navbar' class='navbar-collapse collapse'>
             <ul class='nav navbar-nav navbar-center'>
-                <form action='{% url "search" %}' id='search' method='GET'
-                    <input type='text' class='search-btn' name='q' palceholder='Search Antiques'>
-                    <button type='search' class='search-btn'>Search</button>
-                </form>
-                 <li><a href="{% url 'home' %}">Home</a></li>
+            <form action='{% url "search" %}' id='search' method='get'>
+                <input type='text' type="button" class='search-btn' name='q'>
+                <button type='search' class='search-btn'>
+            <span class="glyphicon glyphicon-search"></span></button>
+            </form>
+                <li><a href="{% url 'home' %}">Home</a></li>
                 <li><a href="{% url 'products' %}">Our Antiques</a></li>
                 {% if user.is_authenticated %}
                 <li><a href="{% url 'logout' %}">Log Out</a></li>
@@ -70,16 +68,40 @@
     {% endif %}
     <div class="container">
         <div class="display text-center">
+        
         </div>
         {% block content %} {% endblock %}
     </div>
 
     <!-- Footer -->
 
-    <footer>
-        <div class="container text-center">
-            <p></p>
+    <footer class="container-fluid">
+        <div class="row ">
+            <div class="col-sm-4 ">
+                <h6 class="general about">About Us</h6>
+                <p class="inline-block ">
+                    We are sell all types of Antiques.
+                </p>
+            </div>
+            <div class="col-sm-4 ">
+                <h6 class="general copyright">Antiques Shop Ltd</h6>
+                <p class="inline-block">
+                    &copy; Copyright 2020
+                </p>
+            </div>
+            <div class="col-sm-4 ">
+                <h6 class="general social">Let's Socialise</h6>
+                <ul class="list-inline social-links ">
+                    <li><a target="_blank" href="# "><i class="fa fa-facebook-f"></i></i></a></li>
+                    <li><a target="_blank" href="# "><i class="fa fa-twitter "></i></a></li>
+                    <li><a target="_blank" href="# "><i class="fa fa-instagram "></i></a></li>
+                    <li><a target="_blank" href="# "><i class="fa fa-youtube "></i></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    
 </body>
 </html>

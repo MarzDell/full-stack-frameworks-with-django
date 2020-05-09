@@ -14,7 +14,7 @@ def contactview(request):
         email = form.cleaned_data.get("email")
         message = form.cleaned_data.get("message")
 
-        if request.user.is_authenticated():
+        if request.user.is_authenticated:
             subject = str(request.user) + "s Message"
         else:
             subject = "A Gest's Message"
