@@ -19,7 +19,6 @@
         <div class="panel-body">
              <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
             <br>
-            <br>
             <h3> {{ product.name }} </h3>
             <p class="product-description"> {{ product.description }} </p>
             <p>Price: <span class="glyphicon glyphicon-gbp" aria-hidden="true"></span> {{ product.price }} </p>
@@ -29,7 +28,7 @@
 
                 <div class="input-group">
                     <input name="quantity" type="number" min="1" max="999" class="form-control"
-                        placeholder="Add" required>
+                        placeholder="Type Quantity" required>
                     <span class="input-group-btn">
                         <button class="btn btn-success" type="submit">Add</button>
                     </span>

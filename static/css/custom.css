@@ -7,16 +7,36 @@ body {
     background-color: white;
 }
 
+
 .container {
     width: 100%;
     text-align: -webkit-center;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 h1 {
     font-size: 70px;
+    color: black;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 500;
 }
 
-.page-title {
+h2, h3 {
+    color: black;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.page-title, h2.page-title-login {
     margin-top: 60px;
     font-size: 40px;
     color: black;
@@ -24,12 +44,23 @@ h1 {
     font-weight: 500;
 }
 
-.navbar-default .navbar-brand, a#product-link {
+h2.page-title {
+    margin-bottom: 60px;
+}
+
+
+
+.navbar-default .navbar-brand, a {
     font-size: 20px;
     color: black;
 }
 
-.navbar-default .navbar-nav>li>a, a {
+a#product-link {
+    font-size: 20px;
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
     font-size: 16px;
     color: black;
 }
@@ -81,6 +112,47 @@ p {
     font-size: 15px;
 }
 
+ /**Home Page**/ 
+
+.container {
+    padding-top: 0;
+}
+
+.landing-section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+
+.landing-main { 
+    background: url(https://www.rd.com/wp-content/uploads/2017/09/01_antiques_Secrets-from-Expert-Antiquers-on-Finding-and-Scoring-the-Real-Deals_554153533_Aris-Suwanmalee-1024x619.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.landing-section-content {
+    padding: 2rem;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ccc;
+}
+  
+.brand {
+    margin: 0;
+    color: white;
+}
+  
+.brand-text {
+    color: white;
+}  
+
+
 /* Search area */
 
 #search {
@@ -101,6 +173,7 @@ form#search {
     margin-top: 15px;
 }
 
+
 .reset-btn {
     margin-top: 35px;
     border-radius: 5px;
@@ -119,16 +192,15 @@ button, input.search-btn {
 }
 
 button.search-btn {
-    background-color: darksalmon;
-    font-size: 16px;
+    background-color: #f8fcff;
+    border: none;
 }
 
-
-button:hover {
-    color: gray;
-    background-color: blanchedalmond;
-    
+button.search-btn:hover {
+    background-color: none;
+    border: none;
 }
+
 
 /** Form control**/
 
@@ -169,7 +241,9 @@ caption p {
     word-wrap: break-word;
 }
 
-.row-row-flex {
+.row {
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
@@ -177,6 +251,7 @@ caption p {
 
 .product-description {
     min-height: 40px;
+    font-size: 20px;
 }
 
 /**Custome Bootstrap**/
@@ -187,6 +262,15 @@ caption p {
 
 .glyphicon {
     font-size: 13px;
+}
+
+.glyphicon-search, .glyphicon-home {
+    font-size: 16px;
+}
+
+.glyphicon-search:hover, .glyphicon-home:hover {
+    color: #DAA520;
+    border: none;
 }
 
 .navbar-default .badge {
@@ -202,6 +286,7 @@ footer {
     position: absolute;
     margin-top: 30px;
     padding-top: 25px;
+    padding-bottom: 25px;
     width: 100%;
 }
 
@@ -232,4 +317,53 @@ h6.general {
     font-family: 'Playfair Display', sans-serif;
     font-weight: 300;
     font-size: 18px;
+}
+
+/**Rating Stars**/
+
+.rating {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(180deg);
+    display: flex;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: block;
+    cursor: pointer;
+    width: 25px;
+}
+
+.rating label:before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 25px;
+    color: #101010;
+}
+
+.rating label:after {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 25px;
+    color: #1f9cff;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after {
+    opacity: 1;
+
 }
