@@ -5,4 +5,5 @@ __pycache__/
 db.json
 env.py
 node_modules
+db.sqlite3
 /env/*
