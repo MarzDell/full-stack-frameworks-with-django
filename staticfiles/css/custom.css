@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair Display:100,200,300,400,500,600,700');
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 20px;
+    padding-top: 100px;
+    background-color: white;
+}
+
+
+.container {
+    width: 100%;
+    text-align: -webkit-center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 70px;
+    color: black;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 500;
+}
+
+h2, h3 {
+    color: black;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.page-title, h2.page-title-login {
+    margin-top: 60px;
+    font-size: 40px;
+    color: black;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 500;
+}
+
+h2.page-title {
+    margin-bottom: 60px;
+}
+
+
+
+.navbar-default .navbar-brand, a {
+    font-size: 20px;
+    color: black;
+}
+
+a#product-link {
+    font-size: 20px;
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    color: black;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+.navbar-default .navbar-nav>li>a:hover, a:hover,.navbar-default .navbar-brand:hover, a#product-link:hover{
+    color: #DAA520;
+    text-decoration: none;
+    background: none;
+}
+
+.navbar {
+    border-bottom: none;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+.email {
+    margin-top: 100px;
+}
+
+.col-xs-4 {
+    text-align: left;
+    width: 100%;
+}
+
+.col-sm-4{
+    padding-bottom: 10px;
+}
+
+/*Navigation bar*/
+
+.navbar-collapse, .navbar-header {
+    background-color: #f8fcff;
+}
+
+.navbar-nav>li>a {
+    font-size: 16px;
+}
+
+.navbar-default .navbar-toggle {
+    background-color: #f8fcff!important;
+    border-color: #f8fcff;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+.navbar-default
+.navbar-toggle:hover, .navbar-default
+.navbar-toogle:focus {
+    background-color: transparent!important;
+}
+
+
+ul.nav .navbar-nav
+.navbar-center {
+    margin: 0;
+}
+
+.navbar-toggle .icon-bar{
+    width: 28px;
+}
+
+.navbar-default
+.navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+ul .nav .navbar-nav .navbar-center {
+    margin: 0;
+}
+
+.nav {
+    padding-left: 15px;
+}
+
+ /**Home Page**/ 
+
+.container {
+    padding-top: 0;
+}
+
+.landing-section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+
+.landing-main { 
+    background: url(https://www.rd.com/wp-content/uploads/2017/09/01_antiques_Secrets-from-Expert-Antiquers-on-Finding-and-Scoring-the-Real-Deals_554153533_Aris-Suwanmalee-1024x619.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.landing-section-content {
+    padding: 2rem;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ccc;
+}
+  
+.brand {
+    margin: 0;
+    color: white;
+}
+  
+.brand-text {
+    color: white;
+}  
+
+
+/* Search area */
+
+#search {
+    width: 100%;
+    border-radius: 5px;
+    display: contents;
+}
+
+form#search {
+    text-align: -webkit-center;
+}
+
+.search-btn {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    font-size: 14px;
+    border: 1px solid gray;
+    margin-top: 15px;
+}
+
+
+.reset-btn {
+    margin-top: 35px;
+    border-radius: 5px;
+    margin-left: 20px;
+    background-color: whitesmoke;
+    font-size: 18px;
+}
+
+input#id_email {
+    width: 100%;
+    border-radius: 5px;
+}
+
+button, input.search-btn {
+    color: black;
+}
+
+button.search-btn {
+    background-color: #f8fcff;
+    border: none;
+}
+
+button.search-btn:hover {
+    background-color: none;
+    border: none;
+}
+
+input.search-btn:focus,
+button.search-btn:focus {
+    outline: 0;
+}
+
+/** Form control**/
+
+form {
+    width: 50%;
+    text-align: center;
+    margin: 50px;
+}
+
+.quantity-input {
+    width: auto;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.btn-warning, .btn-danger, .btn-success {
+    border-radius: 5px!important;
+}
+
+
+/***Product image***/
+
+.product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+/** Product Description**/
+
+caption p {
+    word-wrap: break-word;
+}
+
+.row {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.product-description {
+    min-height: 40px;
+    font-size: 20px;
+}
+
+/**Custome Bootstrap**/
+
+.panel-body {
+    padding: 0;
+}
+
+.glyphicon {
+    font-size: 13px;
+}
+
+.glyphicon-search, .glyphicon-home {
+    font-size: 16px;
+}
+
+.glyphicon-search:hover, .glyphicon-home:hover {
+    color: #DAA520;
+    border: none;
+}
+
+.navbar-default .badge {
+    background-color: #DAA520;
+    color: black;
+}
+
+/*** Footer***/
+
+footer {
+    background-color: #f8fcff;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+}
+
+.col-sm-4 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.fa {
+    font-size: 30px;
+    color: black;
+}
+
+.col-sm-4 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 300;
+}
+
+li {
+    display: inline-block;
+}
+
+.fa:hover {
+    color: #DAA520;
+}
+
+h6.general {
+    color: black;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/**Rating Stars**/
+
+.rating {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(180deg);
+    display: flex;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: block;
+    cursor: pointer;
+    width: 25px;
+}
+
+.rating label:before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 25px;
+    color: #101010;
+}
+
+.rating label:after {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 25px;
+    color: #1f9cff;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after {
+    opacity: 1;
+
+}
+
+/**Media Queries**/
+
+ @media (min-width: 991px) {
+     a.navbar-brand {
+         font-size: 16px;
+         padding-right: 80px;
+     }
+ }
+
+ @media (max-width: 992px) {
+     .search-btn {
+         font-size: 8px;
+         margin-top: 15px;
+     }
+     a.navbar-brand{
+        font-size: 16px;
+    }
+    .navbar-nav>li>a {
+        font-size: 12px;
+    }
+    .page-title {
+        margin-top: 80px;
+    }
+ }
