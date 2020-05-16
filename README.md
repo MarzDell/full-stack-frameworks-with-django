@@ -4,7 +4,7 @@ Full Stack Website with Django - Milestone Project 4 -Antiques E-commerce -Marze
 
 <div align='center'>
 
-[Antigues](https://antiques.herokuapp.com/)  This website is an E-Commerce website where end-users can purchase antiques.
+[Antiques](https://antiques.herokuapp.com/)  This website is an E-Commerce website where end-users can purchase antiques.
 To partake within the secure area of the website the user must be registered and logged in. 
 They make their order and proceed to the checkout. Once they have entered the required payment details they will be notified by an alert message that states how the payment process went. 
 Unregistered users can just browse through the products list. 
