@@ -175,7 +175,7 @@ Validation services were used to ensure that code was valid code used to develop
 
 - [W3C Markup Validation Service](https://validator.w3.org/) was used to test HTML code to ensure it was valid code.
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to test CSS code to ensure it was valid code.
-- [Code Beautify JavaScript Validator](https://codebeautify.org/jsvalidate) was used to test JavaScript code to ensure it was valid code.
+- [PEP8 online check](http://pep8online.com/) was used to test Python code to ensure it was valid code.
 
 ## Manual Testing
 
@@ -195,15 +195,19 @@ in the 'Responsive' setting.
 
 I checked that:
 
- All the links are working correctly and the page does not show any error. I added, edit, update and delete many recipes to check the performance of all of the function and if it is transport to MongoDB.
-    
+ All the links are working correctly and the page does not show any error.
+
 ## Deployments
 
-The project is deployed on the Heroku Cloud Platform by using a local Git repository linked to Heroku. A MongoDB database was utilised and set up inside the Heroku platform. 
-Credentials of the database connection are inside the requirements.txt file, it uses the os environ method to tell Heroku to look inside its own config variable (MONGODB_URI) 
-in order to make sure the production database is kept secret.
-A Procfile is required, it is a text file named 'Procfile' placed in the root of the application that lists the process types that are needed in an application.
+The project is deployed on the Heroku Cloud Platform by using a local Git repository linked to Heroku. 
 
+To run this project locally I needed the following to be installed:
+
+    -Python3 to run the application.
+    -PIP to install all app requirements.
+    -Any IDE. I used Gitpot.
+    -GIT for version control.
+    
 ## Credits
 
 ### Contents
@@ -221,7 +225,7 @@ Images were downloaded from the webpage [Pinterest](https://www.pinterest.co.uk/
 - Ideas on how to start with my project a took from youtuber that I follow: [Traversy Media](https://www.youtube.com/user/TechGuyWeb)
 - I use help as well from:
     - Website about tutorial [Python3](https://www.tutorialspoint.com/python3/index.htm)
-    - Tutorials about [MongoDB](https://www.guru99.com/mongodb-tutorials.html)
+    - Django Documentation [Django 2.2](https://docs.djangoproject.com/en/2.2/)
 
 ### Acknowledgements
 
