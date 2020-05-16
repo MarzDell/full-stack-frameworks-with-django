@@ -108,7 +108,7 @@ p {
 }
 
 .navbar-default .navbar-toggle {
-    background-color: #f8fcff;
+    background-color: #f8fcff!important;
     border-color: #f8fcff;
 }
 
@@ -119,8 +119,9 @@ p {
 .navbar-default
 .navbar-toggle:hover, .navbar-default
 .navbar-toogle:focus {
-    background-color: transparent;
+    background-color: transparent!important;
 }
+
 
 ul.nav .navbar-nav
 .navbar-center {
@@ -138,6 +139,10 @@ ul.nav .navbar-nav
 
 ul .nav .navbar-nav .navbar-center {
     margin: 0;
+}
+
+.nav {
+    padding-left: 15px;
 }
 
  /**Home Page**/ 
@@ -229,6 +234,10 @@ button.search-btn:hover {
     border: none;
 }
 
+input.search-btn:focus,
+button.search-btn:focus {
+    outline: 0;
+}
 
 /** Form control**/
 
