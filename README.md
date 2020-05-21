@@ -131,7 +131,7 @@ Due to lack of time remaining the following features were not implemented:
 ## Technologies Used
 
 - This project uses HTML, CSS, JavaScript and various different technologies to work as helpers to the languages.
-- #### [Gitpot](https://www.gitpot.com)
+- #### [Gitpod](https://www.gitpod.com)
     - **Gitpot** is an IDE used to develop the website.
 - #### [Bootstrap](https://www.bootstrapcdn.com/)
     - **Bootstrap** is used to create easier & cleaner responsiveness in addition with helping maintain padding and margins.
