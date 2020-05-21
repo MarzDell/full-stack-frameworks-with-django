@@ -29,12 +29,12 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path(r'admin/', admin.site.urls),
-    path(r'', include('home.urls')),
-    path(r'products/', include('products.urls')),
-    path(r'cart/', include('cart.urls')),
-    path(r'accounts/', include('accounts.urls')),
-    path(r'search/', include('search.urls')),
-    path(r'checkout/', include('checkout.urls')),
-    path(r'contact/', include('contact.urls')),
+    path('admin/', admin.site.urls),
+    path('', include('home.urls')),
+    path('products/', include('products.urls')),
+    path('cart/', include('cart.urls')),
+    path('accounts/', include('accounts.urls')),
+    path('search/', include('search.urls')),
+    path('checkout/', include('checkout.urls')),
+    path('contact/', include('contact.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

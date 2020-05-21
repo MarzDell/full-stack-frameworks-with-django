@@ -8,5 +8,5 @@ urlpatterns = [
     path(r'login/', login, name='login'),
     path(r'registration/', registration, name='registration'),
     path(r'profile/', user_profile, name='profile'),
-    path(r'password_reset/', include(urls_reset)),
+    path(r'', include(urls_reset)),
 ]
