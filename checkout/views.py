@@ -14,7 +14,7 @@ stripe.api_key = settings.STRIPE_SECRET
 
 @login_required
 def checkout(request):
-    if request.method == "POST":
+    if request.method=="POST":
         order_form = OrderForm(request.POST)
         payment_form = MakePaymentForm(request.POST)
 
@@ -25,7 +25,7 @@ def checkout(request):
 
             cart = request.session.get('cart', {})
             total = 0
-            for id, quantity in cart.itmes():
+            for id, quantity in cart.items():
                 product = get_object_or_404(Product, pk=id)
                 total += quantity * product.price
                 order_line_item = OrderLineItem(
