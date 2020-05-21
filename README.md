@@ -132,7 +132,7 @@ Due to lack of time remaining the following features were not implemented:
 
 - This project uses HTML, CSS, JavaScript and various different technologies to work as helpers to the languages.
 - #### [Gitpod](https://www.gitpod.com)
-    - **Gitpot** is an IDE used to develop the website.
+    - **Gitpod** is an IDE used to develop the website.
 - #### [Bootstrap](https://www.bootstrapcdn.com/)
     - **Bootstrap** is used to create easier & cleaner responsiveness in addition with helping maintain padding and margins.
     - It's also used to include modal features to the website to give it a professional look.
@@ -205,7 +205,7 @@ To run this project locally I needed the following to be installed:
 
     -Python3 to run the application.
     -PIP to install all app requirements.
-    -Any IDE. I used Gitpot.
+    -Any IDE. I used Gitpod.
     -GIT for version control.
     
 ## Credits
