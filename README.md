@@ -128,6 +128,8 @@ Due to lack of time remaining the following features were not implemented:
 
 3. #### A cart order list and shipping facility.
 
+4. #### Rate us will be made with javascript and will be connected with link where user can leave feedback.
+
 ## Technologies Used
 
 - This project uses HTML, CSS, JavaScript and various different technologies to work as helpers to the languages.
