@@ -70,7 +70,7 @@ All images have been chosen to match and have been downloaded from Pinteres.
     
 ### Wireframes
 
-Wireframes were made using [Moqups](https://moqups.com).
+Wireframes were made using print screen.
 
 ## Features
 
