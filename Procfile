@@ -1,1 +1,1 @@
-web: gunicorn antiques.wsgi;application 
+web: gunicorn antiques.wsgi:application 
