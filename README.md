@@ -4,13 +4,13 @@ Full Stack Website with Django - Milestone Project 4 -Antiques E-commerce -Marze
 
 <div align='center'>
 
-[Antiques](https://antiques.herokuapp.com/)  This website is an E-Commerce website where end-users can purchase antiques.
+[Antiques](https://marzdell-antiques.herokuapp.com/)  This website is an E-Commerce website where end-users can purchase antiques.
 To partake within the secure area of the website the user must be registered and logged in. 
 They make their order and proceed to the checkout. Once they have entered the required payment details they will be notified by an alert message that states how the payment process went. 
 Unregistered users can just browse through the products list. 
 
 <br><br>
-[**View Antiques website here**](https://antiques.herokuapp.com/),
+[**View Antiques website here**](https://marzdell-antiques.herokuapp.com/),
 [**View Website Development in Github here**](https://github.com/MarzDell/full-stack-frameworks-with-django)
 </div>
 
@@ -160,7 +160,7 @@ Due to lack of time remaining the following features were not implemented:
 - #### [PostgreSQL](http://whitenoise.evans.io/en/stable/)
     - **PostgreSQL** is used as relational SQL database plugin via Heroku.
 - #### [Heroku](https://www.heroku.com/)
-    - **Heroku** This is a cloud platform where the project is deployed to. The website can be viewed [here!](https://antiques.herokuapp.com/)
+    - **Heroku** This is a cloud platform where the project is deployed to. The website can be viewed [here!](https://marzdell-antiques.herokuapp.com/)
 
 
 ## Testing
