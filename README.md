@@ -199,6 +199,9 @@ I checked that:
 
  All the links are working correctly and the page does not show any error.
 
+ Note: DEBUG in settings.py is set to True as when I set to False the app does not display any pictures, I try use AWS 
+      but application was crushing.
+
 ## Deployments
 
 The project is deployed on the Heroku Cloud Platform by using a local Git repository linked to Heroku. 
