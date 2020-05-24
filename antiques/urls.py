@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 from home import urls as urls_home
 from accounts import urls as urls_accounts
@@ -25,7 +24,6 @@ from search import urls as urls_search
 from checkout import urls as urls_checkout
 from contact import urls as urls_contact
 from django.views import static
-from .settings import MEDIA_ROOT
 from django.conf import settings
 from django.conf.urls.static import static
 
