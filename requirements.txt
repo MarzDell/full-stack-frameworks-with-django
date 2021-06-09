@@ -4,7 +4,7 @@ botocore==1.16.4
 db==0.1.1
 db-sqlite3==0.0.1
 dj-database-url==0.5.0
-Django==2.2
+Django==2.2.22
 django-custom-auth-user==0.1.2
 django-forms-bootstrap==3.1.0
 django-storages==1.9.1
